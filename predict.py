@@ -210,7 +210,8 @@ class Patient:
             base_m_cum_br = np.exp(0.7424402 - 7.527762/self.time**0.5 - 1.812513*np.log(self.time)/self.time**0.5)
         else:
             base_m_cum_br = np.exp(-1.156036 + 0.4707332/self.time**2 - 3.51355/self.time)
-            
+
+        self.cum_baseline_hazard_ = base_m_cum_br
         # Annual cancer mortality rate
         base_m_br = np.array([i for i in base_m_cum_br])
 
