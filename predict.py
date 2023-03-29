@@ -100,9 +100,6 @@ class Patient:
         self.params = param_dict
         return param_dict
     
-    def print_patient_data(self):
-        pprint(self.get_patient_data())
-    
     def __set_model(self):
         """患者の情報からモデルの重みを決定するメソッド
 
