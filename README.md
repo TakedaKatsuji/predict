@@ -1,6 +1,5 @@
 # predict breast cancer in Python
-
-
+[predict web page](https://breast.predict.nhs.uk/) / [predict git hub](https://github.com/WintonCentre/predict-v30-r)
 ## method
 参照：https://breast.predict.nhs.uk/predict-mathematics.pdf  
 
