@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from pprint import pprint
 import itertools
-import operator
 from sksurv.metrics import concordance_index_censored
 
 class Patient:
@@ -38,6 +37,14 @@ class Patient:
     
     """
     def __init__(self,patient_data):
+        """__init__
+        input   : patient_data(pd.DataFrame) shape=(1,15)
+        
+        columns : 'pID', 'age', 'detection', 'tumour_size', 'tumour_grade', 'nodes', 'er',
+                    'her2', 'ki67', 'chemo_generation', 'hormonetherapy', 'trastuzumab',
+                    'bisphosphonates', 'event', 'duration'
+        """        
+
         # 患者の情報
         
         self.patient_data = patient_data
