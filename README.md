@@ -6,24 +6,21 @@
 乳がんが原因のベースライン累積ハザード関数   
 
 ER+のとき  
-$
-\begin{align}
+$$
+
        H_{cancer}(t) = exp[\ 0.7424402 − 7.527762/\sqrt{t} − 1.812513 ∗ log(t)/\sqrt{t} \ ] 
-\end{align}
-$
+$$
 ER-のとき
-$
-\begin{align}
+$$
+
         H_{cancer}(t) = exp[\ −1.156036 + 0.4707332/t^2 − 3.51355/t \ ]
-\end{align}
-$
+$$
 
 その他が原因のベースライン累積ハザード関数  
-$
-\begin{align}
+$$
+
         H_{other}(t) = exp[\ −6.052919 + (1.079863 * log(t)) + (0.3255321 * \sqrt{t}) \ ]
-\end{align}
-$
+$$
 
 
 ---
