@@ -41,6 +41,7 @@ pip install scikit-survival
 |event|event発生の有無|
 |duration|event発生までの時間|
 
+---
 
 ## Patientクラスについて
 
@@ -82,6 +83,7 @@ pID, age, detection, tumour_size, tumour_grade, nodes, er,her2ki67, chemo_genera
     
     """
 ```
+---
 
 ###  get_patient_data メソッド
 入力情報を辞書式で返すメソッド
@@ -115,12 +117,15 @@ patient.get_patient_data()
     'duration': 13}
 ```
 
+---
+
 ###  predict メソッド
 risk_scoreを返すメソッド
 ```python
 patient.predict()
 >>> 1.8450373070201214
 ```
+---
 
 ### predict_cumulative_hazard_function メソッド
 累積ハザード関数を返すメソッド
@@ -131,6 +136,8 @@ patient.predict_cumulative_hazard_function()
        31.89553415, 34.8188219 , 37.61044525, 40.27202257, 42.80686716])
 ```
 
+---
+
 ### predict_survival_function メソッド
 生存関数を返すメソッド
 ```python
@@ -139,7 +146,7 @@ patient.predict_survival_function()
        84.47559298, 81.02300724, 77.63290495, 74.33817888, 71.15843548,
        68.10446585, 65.1811781 , 62.38955475, 59.72797743, 57.19313284])
 ```
-
+---
 ## concordance_score 関数について
 concordance_scoreスコアを返す関数
 sksurvのconcordance_index_censoredを使用しています。
