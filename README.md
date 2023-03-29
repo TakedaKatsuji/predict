@@ -41,7 +41,6 @@ pip install scikit-survival
 |event|event発生の有無|
 |duration|event発生までの時間|
 
----
 
 ## Patientクラスについて
 
